@@ -18,3 +18,4 @@ site-lisp/adventur-mode
 smex-items
 .smex-items
 .mc-lists.el
+eshell/
