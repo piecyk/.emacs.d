@@ -15,3 +15,6 @@ site-lisp/adventur-mode
 /url/
 /var/
 /.sx/
+smex-items
+.smex-items
+.mc-lists.el
