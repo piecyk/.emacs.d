@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: ngfa
+# key: ngfa
+# --
+angular.module("$1").factory("$2", [
+    function(){
+        "use strict";
+        var self = {};
+        $3
+        return self;
+    }
+]);

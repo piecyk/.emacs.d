@@ -1,0 +1,6 @@
+ls
+rm myAccountUtil.jsx 
+ls -all
+ls
+mkdir react
+ls

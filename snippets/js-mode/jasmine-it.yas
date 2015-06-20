@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name : ji
+# key: ji
+# --
+it("$1", function (){
+  $2
+});

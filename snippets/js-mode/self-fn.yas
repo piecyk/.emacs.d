@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sf
+# key: sf
+# --
+self.$1 = function($2) {
+        $3
+};

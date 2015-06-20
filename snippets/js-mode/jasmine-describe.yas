@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name : jd
+# key: jd
+# --
+describe("$1", function () {
+    "use strict";
+    var factory;
+
+    beforeEach(function (){
+        module("$2");
+        inject(function(_factory_) {
+            factory = _factory_;
+        });
+    });
+
+    it("should check exists", function (){
+        expect(factory).toBeDefined();
+    });
+});
