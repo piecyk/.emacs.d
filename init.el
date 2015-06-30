@@ -304,6 +304,7 @@
 
 (rename-modeline "js2-mode" js2-mode "JS2")
 (rename-modeline "clojure-mode" clojure-mode "Clj")
+(rename-modeline "undo-tree-mode" undo-tree-mode "UT")
 
 (add-hook 'after-init-hook 'global-company-mode)
 
@@ -411,10 +412,17 @@
 (setq uniquify-buffer-name-style 'post-forward
       uniquify-separator ":")
 
-;; how disable mouse
+;; how disable mouse ?
 (global-unset-key (kbd "<down-mouse-1>"))
 (global-unset-key (kbd "<mouse-1>"))
 (global-unset-key (kbd "<down-mouse-2>"))
 (global-unset-key (kbd "<mouse-2>"))
 (global-unset-key (kbd "<down-mouse-3>"))
 (global-unset-key (kbd "<mouse-3>"))
+
+;; Auto refresh buffers
+(global-auto-revert-mode 1)
+
+;; Also auto refresh dired, but be quiet about it
+(setq global-auto-revert-non-file-buffers t)
+(setq auto-revert-verbose nil)
